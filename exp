@@ -840,6 +840,50 @@ local Button = DupeTab:CreateButton({
     [2] = -0
 }
 
+local Button = DupeTab:CreateButton({
+   Name = "ALL CITY HK416 [SHIN]",
+   Callback = function()
+  local args = {
+    [1] = "HK416",
+    [2] = -0
+}
+
+local Button = DupeTab:CreateButton({
+   Name = "ALL CITY UZI [SHIN]",
+   Callback = function()
+  local args = {
+    [1] = "UZI",
+    [2] = -0
+}
+
+local Button = DupeTab:CreateButton({
+   Name = "ALL CITY MEDKIT [SHIN]",
+   Callback = function()
+  local args = {
+    [1] = "MEDKIT",
+    [2] = -0
+}
+
+local Button = DupeTab:CreateButton({
+   Name = "ALL CITY Radio [SHIN]",
+   Callback = function()
+  local args = {
+    [1] = "Radio",
+    [2] = -0
+}
+
+game:GetService("ReplicatedStorage").GunShop.Events.Purchase:FireServer("Radio", -0)
+   end,
+})
+game:GetService("ReplicatedStorage").GunShop.Events.Purchase:FireServer("MEDKIT", -0)
+   end,
+})
+game:GetService("ReplicatedStorage").GunShop.Events.Purchase:FireServer("UZI", -0)
+   end,
+})
+game:GetService("ReplicatedStorage").GunShop.Events.Purchase:FireServer("HK416", -0)
+   end,
+})
 game:GetService("ReplicatedStorage").GunShop.Events.Purchase:FireServer("Desert Deagle", -0)
    end,
 })
